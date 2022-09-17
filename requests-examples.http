@@ -1,0 +1,37 @@
+# API-request examples
+@baseUrl = http://127.0.0.1:5000
+
+POST {{baseUrl}}/users/
+Content-Type: application/json
+
+{
+  "name": "Zuser",
+  "password": "qwerty"
+}
+
+###
+POST {{baseUrl}}/ads/
+Content-Type: application/json
+
+{
+  "title": "title",
+  "text": "text",
+  "user_id": 1
+}
+
+###
+GET {{baseUrl}}/ads/
+Content-Type: application/json
+
+###
+PATCH {{baseUrl}}/ads/1
+Content-Type: application/json
+
+{
+  "title": "new_title",
+  "text": "new_text"
+}
+
+###
+DELETE  {{baseUrl}}/ads/1
+Content-Type: application/json
